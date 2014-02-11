@@ -1,0 +1,27 @@
+Jim Yuan
+APCS2 pd 8
+HW02
+2014-02-07
+
+
+Do you know?
+
+1. The instance variable sideLength determines how many steps the bug will take before it turns right to make another side of the square draws.
+
+2. The instance variable steps represents the number of steps that the bug takes, so that the size of the box that the bug makes can be maintained and kept track of.
+
+3. To make the box, the bug has to turn 90 degrees, but the turn method only turns 45 degrees, so the the turn method has to be called twice. 
+
+4. BoxBug extends Bug, which has the move method. What this means is that an instance of BoxBug has all the assorted stuff that an instance of Bug has, the difference being that BoxBug likely has extra stuff (like methods and variables) that Bug does not. 
+
+5. After a BoxBug is constructed, the size of its square pattern will remain the same. This is because (assuming there are no random rocks or whatever) the BoxBug is programmed to take a certain number of steps, turn, and then repeat. 
+
+6. The path a BoxBug will change if it encounters another bug and/or if it encounters a rock or other such obstacle. Or the edge of the grid.
+
+7. The value of steps will be zero after the number of steps reaches the number dictated by the sideLength variable.
+
+Exercises:
+
+1. CircleBug's behavior is different from that of the BoxBug in that the CircleBug has a lot more diagonal movement as opposed to the movement like that of a rook in chess.
+
+5. I don't understand what the question means by adding another BoxBug to the grid, I assume by coding; you have to make a new instance of BoxBug, and then use the world.add(new Location(x, y), Bug) line to place the bug on. What this does is places whatever Bug instance you have on the grid on the square at (in terms of the xy-plane) (-y, x). 
